@@ -58,7 +58,7 @@ def post_share(request, post_id):
             subject = '{} ({}) recommends you reading "{}"'.format(cd['name'], cd['email'], post.title)
             message = 'Read "{}" at {}\n\n{}\'s comments: {}'.format(post.title, post_url, cd['name'],
                                                                      cd['comments'])
-            send_mail(subject, message, 'admin@myblog.com', [cd['to']])
+            send_mail(subject, message, '15071051125@163.com', [cd['to']])
             sent = True
     else:
         form = EmailPostForm()
